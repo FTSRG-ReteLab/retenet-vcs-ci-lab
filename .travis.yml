@@ -1,10 +1,1 @@
 language: java
-
-os:
-  - linux
-
-jdk:
-  - oraclejdk8
-
-apply plugin: "java"
-sourceCompatibility = 1.8
