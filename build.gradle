@@ -2,6 +2,11 @@ subprojects {
   apply plugin: 'java'
 
   repositories {
-    jcenter()
+  	jcenter()
+    mavenCentral()
+  }
+  
+  dependencies {
+  	compile group: 'com.google.guava', name: 'guava', version: '22.0'
   }
 }
