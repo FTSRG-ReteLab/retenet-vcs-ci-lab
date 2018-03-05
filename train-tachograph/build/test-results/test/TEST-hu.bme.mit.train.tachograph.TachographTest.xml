@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hu.bme.mit.train.tachograph.TachographTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-03-05T14:54:13" hostname="ubuntu" time="0.141">
+<testsuite name="hu.bme.mit.train.tachograph.TachographTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-03-05T16:12:10" hostname="ubuntu" time="0.302">
   <properties/>
-  <testcase name="OverridingJoystickPosition_CheckSpeedLimit" classname="hu.bme.mit.train.tachograph.TachographTest" time="0.141"/>
+  <testcase name="OverridingJoystickPosition_CheckSpeedLimit" classname="hu.bme.mit.train.tachograph.TachographTest" time="0.302"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

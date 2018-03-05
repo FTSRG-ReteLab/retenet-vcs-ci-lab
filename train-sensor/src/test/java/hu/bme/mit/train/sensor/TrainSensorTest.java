@@ -50,5 +50,10 @@ public class TrainSensorTest {
         verify(user,times(1)).setAlarmState(false);
     }
 
+    @Test
+    public void SpeedLimitTest() {
+        sensor.overrideSpeedLimit(101);
+        Assert.assertEquals(101,sensor.getSpeedLimit());
+    }
 
 }
