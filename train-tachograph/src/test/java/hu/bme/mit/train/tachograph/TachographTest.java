@@ -33,6 +33,6 @@ public class TachographTest {
 		user.overrideJoystickPosition(4);
 		controller.followSpeed();
 		tacho.record();
-		Assert.assertEquals(1, tacho.records.size());
+		Assert.assertEquals(1, tacho.getRecordCount());
 	}
 }

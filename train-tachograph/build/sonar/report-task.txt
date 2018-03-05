@@ -1,0 +1,6 @@
+projectKey=train:train-tachograph
+serverUrl=http://localhost:9000
+serverVersion=7.0.0.36138
+dashboardUrl=http://localhost:9000/dashboard/index/train:train-tachograph
+ceTaskId=AWH2qA1TRpCCIaz1cELO
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWH2qA1TRpCCIaz1cELO

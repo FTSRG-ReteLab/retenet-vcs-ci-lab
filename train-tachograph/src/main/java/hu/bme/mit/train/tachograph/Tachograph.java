@@ -7,7 +7,7 @@ import com.google.common.collect.Table;
 import hu.bme.mit.train.interfaces.*;
 
 public class Tachograph {
-	public Table<LocalDateTime, Integer, Integer> records;
+	private Table<LocalDateTime, Integer, Integer> records;
 	private TrainController TC;
 	private TrainUser TU;
 	
@@ -20,4 +20,7 @@ public class Tachograph {
 		TU = tUser;
 		records = HashBasedTable.create();
 	}
+	public int  getRecordCount(){
+	    return records.size();
+    }
 }
