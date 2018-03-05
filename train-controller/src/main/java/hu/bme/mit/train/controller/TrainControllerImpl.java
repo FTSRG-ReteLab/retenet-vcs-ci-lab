@@ -41,9 +41,28 @@ public class TrainControllerImpl implements TrainController {
 		}
 	}
 
+	class InnerThread extends Thread{
+		int sleepTime;
+		InnerThread(int sleepTime){ this.sleepTime = sleepTime; }
+		public void run() {
+			followSpeed();
+			try {
+				sleep(sleepTime);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	boolean has_thread = false;
+	InnerThread innerThread;
+
 	@Override
 	public void setJoystickPosition(int joystickPosition) {
-		this.step = joystickPosition;		
+		this.step = joystickPosition;
+		if(!has_thread){
+			innerThread = new InnerThread(1000);
+			innerThread.start();
+		}
 	}
 
 }
